@@ -1,0 +1,72 @@
+.navbar-bg-container{
+    background-color: rgb(25, 25, 110);
+    color: aliceblue;
+    text-align: center;
+    padding: 15px 20px;
+}
+.navbar-bg-container img{
+    width: 80px;
+}
+@media (min-width: 992px) {
+  .navbar-bg-container{
+    display: flex;
+    justify-content: start;
+    padding: 15px 60px;
+  }
+  .navbar-login-lg{
+     background-color: rgb(25, 25, 110);
+    color: aliceblue;
+    text-align: center;
+    padding: 15px 20px;
+    display: flex;
+  }
+  .navbar-login-lg img{
+    display: inline-block;
+    width: 80px;
+  }
+  .navbar-bg-container img{
+    display: inline-block;
+    width: 80px;
+  }
+  .navbar-right{
+    flex: 11;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+  }
+}
+.logout-btn{
+  color: aliceblue;
+  background-color: red;
+  border: 0px;
+  border-radius: 10px;
+  padding: 5px;
+  font-size: 16px;
+  display: block;
+  text-align: right;
+}
+.logout-btn-container{
+  display: flex;
+  gap: 20px;
+}
+@media (max-width:500px) {
+  .nav-heading{
+    display: none;
+  }
+  .navbar-login-sm{
+    display: flex;
+    padding: 15px 0px;
+     background-color: rgb(25, 25, 110);
+    color: aliceblue;
+    text-align: center;
+    justify-content: space-around;
+  }
+  .navbar-login-sm img{
+    display: inline-block;
+    width: 80px;
+  }
+  .logout-btn-container h2{
+    font-size: 20px;
+  }
+}

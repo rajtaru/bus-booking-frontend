@@ -1,0 +1,153 @@
+.register-container {
+  max-width: 800px;
+  margin: 60px auto;
+  padding: 20px;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.register-title {
+  color: #132875;
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+
+.register-form {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 25px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.form-group {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-weight: 500;
+  color: #132875;
+  margin-bottom: 6px;
+  font-size: 15px;
+}
+
+input,
+select {
+  padding: 10px;
+  border: none;
+  border-bottom: 2px solid #132875;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+input:focus,
+select:focus {
+  border-color: #0b5ed7;
+}
+
+.register-btn {
+  width: 100%;
+  background-color: #132875;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.register-btn:hover {
+  background-color: #0b5ed7;
+}
+
+.login-text {
+  font-size: 14px;
+  margin-top: 15px;
+}
+
+.login-text a {
+  color: #132875;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.login-text a:hover {
+  text-decoration: underline;
+}
+
+/* 📱 Responsive Styles */
+@media (max-width: 600px) {
+  .register-container {
+    padding: 10px;
+  }
+
+  .register-title {
+    font-size: 24px;
+  }
+
+  .register-form {
+    padding: 15px;
+  }
+
+  input,
+  select {
+    font-size: 13px;
+  }
+}
+/* 💻 Large devices (like laptops/desktops) */
+@media (min-width: 1200px) {
+  .register-container {
+    max-width: 900px;
+    padding: 40px;
+  }
+
+  .register-title {
+    font-size: 32px;
+    margin-bottom: 35px;
+  }
+
+  .register-form {
+    padding: 40px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+  }
+
+  .form-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px 40px;
+  }
+
+  .form-group label {
+    font-size: 16px;
+  }
+
+  input,
+  select {
+    font-size: 15px;
+    padding: 12px;
+    border-bottom: 2px solid #132875;
+  }
+
+  .register-btn {
+    width: 50%;
+    margin: 30px auto 0;
+    display: block;
+    font-size: 17px;
+    font-weight: 600;
+  }
+
+  .login-text {
+    font-size: 15px;
+  }
+}

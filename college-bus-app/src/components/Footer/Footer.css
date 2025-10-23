@@ -1,0 +1,29 @@
+.footer-bg-container{
+    background-color: rgb(25, 25, 110);
+    text-align: center;
+    padding: 15px 30px;
+}
+
+.footer-bg-container ul{
+    list-style: none;
+    color: aliceblue;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.footer-bg-container p{
+    color: rgba(240, 248, 255, 0.562);
+    margin-top: 12px;
+}
+
+.footer-bg-container li{
+    margin-bottom: 10px;
+}
+
+@media (min-width:992px) {
+    .footer-bg-container ul{
+        display: flex;
+        gap: 30px;
+        justify-content: center;
+    }
+}

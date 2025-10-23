@@ -1,0 +1,81 @@
+// src/data/busesData.js
+export const busesData = [
+  {
+    id: "GGU01",
+    number: "AP 30001",
+    route: "TANUKU",
+    departure: "18:00 PM",
+    availableSeats: "51/55",
+  },
+  {
+    id: "GGU02",
+    number: "AP 30002",
+    route: "KAKINADA",
+    departure: "18:30 PM",
+    availableSeats: "53/55",
+  },
+  {
+    id: "GGU03",
+    number: "AP 30003",
+    route: "TUNI",
+    departure: "19:00 PM",
+    availableSeats: "55/55",
+  },
+  {
+    id: "GGU04",
+    number: "AP 30004",
+    route: "RAMACHANDRAPURAM",
+    departure: "19:30 PM",
+    availableSeats: "49/55",
+  },
+  {
+    id: "GGU05",
+    number: "AP 30005",
+    route: "RAJAHMUNDRY",
+    departure: "20:00 PM",
+    availableSeats: "50/55",
+  },
+  {
+    id: "GGU06",
+    number: "AP 30006",
+    route: "ELURU",
+    departure: "20:30 PM",
+    availableSeats: "47/55",
+  },
+  {
+    id: "GGU07",
+    number: "AP 30007",
+    route: "VIJAYAWADA",
+    departure: "21:00 PM",
+    availableSeats: "44/55",
+  },
+  {
+    id: "GGU08",
+    number: "AP 30008",
+    route: "BHIMAVARAM",
+    departure: "21:30 PM",
+    availableSeats: "52/55",
+  },
+  {
+    id: "GGU09",
+    number: "AP 30009",
+    route: "NELLORE",
+    departure: "22:00 PM",
+    availableSeats: "53/55",
+  },
+  {
+    id: "GGU10",
+    number: "AP 30010",
+    route: "ONGOLE",
+    departure: "22:30 PM",
+    availableSeats: "55/55",
+  },
+  // duplicate remaining to reach 30 buses
+  ...Array.from({ length: 20 }, (_, i) => ({
+    id: `GGU${(i + 11).toString().padStart(2, "0")}`,
+    number: `AP 30${(i + 11).toString().padStart(3, "0")}`,
+    route: ["TANUKU", "KAKINADA", "TUNI", "RAJAHMUNDRY", "ELURU", "VIJAYAWADA"][i % 6],
+    departure: `${18 + (i % 5)}:${i % 2 === 0 ? "00" : "30"} PM`,
+    availableSeats: `${55 - (i % 6)}/55`,
+  })),
+];
